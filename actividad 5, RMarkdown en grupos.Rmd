@@ -1,0 +1,29 @@
+---
+title: "Actividad 5, RMarkdown en grupos"
+author: "Bruno Bellagamba , Ana Sinicariello"
+date: "2 de abril de 2018"
+output: pdf_document
+---
+
+#Incluir imagen
+![](perro.jpg)
+Porque los perros son lindos
+
+#Chunk con codigo de R
+```{r,echo=TRUE,fig.width=5,fig.height=5}
+library(ggplot2)
+ggplot(data = mpg, aes(x = hwy, y = cty)) +
+geom_point() + theme(aspect.ratio = 1) +
+labs(x = "Millas por galón en ruta",
+y = "Millas por galón en ciudad",
+title = "Scatterplot hwy vs cty")
+
+```
+
+#Inluir una tabla
+```{r,echo=TRUE,results='asis'}
+library(xtable)
+xtable(mpg[1:5,1:5])
+
+```
+
