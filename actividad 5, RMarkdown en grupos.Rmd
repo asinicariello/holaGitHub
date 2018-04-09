@@ -5,6 +5,8 @@ date: "2 de abril de 2018"
 output: pdf_document
 ---
 
+#Modificacion en casa!
+
 #Incluir imagen
 ![](perro.jpg)
 Porque los perros son lindos
